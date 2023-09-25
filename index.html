@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset='utf-8'/>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel='stylesheet' href='styles.css'/>
+    <title>FCC Technical Documentation Page</title>
+  </head>
+  <body>
+    <nav id='navbar'>
+      <header id='nav-header'>JS Data Types</header>
+      <ul id='nav-list'>
+        <li class='nav-item'> 
+          <a class='nav-link' href='#introduction'>Introduction</a>
+        </li>
+        <li class='nav-item'> 
+          <a class='nav-link' href='#string'>String</a>
+        </li>
+        <li class='nav-item'> 
+          <a class='nav-link' href='#number'>Number</a>
+        </li>
+        <li class='nav-item'> 
+          <a class='nav-link' href='#bigint'>BigInt</a>
+        </li>
+        <li class='nav-item'> 
+          <a class='nav-link' href='#boolean'>Boolean</a>
+        </li>
+        <li class='nav-item'> 
+          <a class='nav-link' href='#undefined'>Undefined</a>
+        </li>
+        <li class='nav-item'> 
+          <a class='nav-link' href='#null'>Null</a>
+        </li>
+        <li class='nav-item'> 
+          <a class='nav-link' href='#symbol'>Symbol</a>
+        </li>
+        <li class='nav-item'> 
+          <a class='nav-link' href='#object'>Object</a>
+        </li>
+        <li class='nav-item'> 
+          <a class='nav-link' href='#reference'>Reference</a>
+        </li>
+      </ul>
+    </nav>
+    <main id='main-doc'>
+      <section class='main-section' id='introduction'>
+        <header>Introduction</header>
+        <p>All programming languages have their own built-in data structures, often differing from other languages.</p>
+        <p>JavaScript has seven primitive values: String, Number, BigInt, Boolean, Undefined, Null and Symbol.</p>
+        <p>Everything else is an Object. Common Object types include Functions and Arrays.</p>
+      </section>
+      <section class='main-section' id='string'>
+        <header>String</header>
+        <p>The String type represents textual data through UTF-16 code units. The length of the string is the number of UTF-16 code units in it. Each element in the string occupies a position, the first element is at index 0, the second at index 1, and so on. Strings are immutable values and cannot be modified once created.</p>
+        <ul>
+          <li>
+            Double quotes and single quotes are interchangable.
+          </li>
+          <li>
+            Back ticks are used when you need to include variables in the string.
+          </li>
+        </ul>
+        <code>
+          let pet1 = "cat";<br>
+          let pet2 = 'dog';<br>
+          let result = `Alex has a ${pet1} and Jo has a ${pet2};<br>
+        //Alex has a cat and Jo has a dog
+        </code>
+      </section>
+      <section class='main-section' id='number'>
+        <header>Number</header>
+        <p>
+          Simply put, the Number type stores positive and negative floating-point numbers. There is however a specific range that can be safely stored.
+        </p>
+        <code>
+          let x1 = 31;<br>
+          let x2 = -12.5;
+        </code>
+      </section>
+      <section class='main-section' id='bigint'>
+        <header>BigInt</header>
+        <p>
+          The BigInt type can represent numbers with arbitrary magnitude. With BigInts you can safely store numbers beyond the safe limit for the Number type.
+        </p>
+        <code>
+          //confused
+        </code>
+      </section>
+      <section class='main-section' id='boolean'>
+        <header>Boolean</header>
+        <p>
+          The Boolean type will represents one of two values: true or false. They are usually used for conditional operations, for example:
+        </p>
+        <ul>
+          <li>
+            ternary operators
+          </li>
+          <li>
+            if...else
+          </li>
+          <li>
+            while
+          </li>
+        </ul>
+        <code>
+          let x = 5;<br>
+          let y = 7;<br>
+          let z = 5
+          (x == y) //returns false<br>
+          (x == z) //returns true
+        </code>
+      </section>
+      <section class='main-section' id='undefined'>
+        <header>Undefined</header>
+        <p>The undefined type is inhabited by only one value: undefined. It indicates the absence of a value.</p>
+        <code>let x =; //a variable with no value will return undefined.<br>
+        return; //a return statement with no value will return undefined.
+        </code>
+      </section>
+      <section class='main-section' id='null'>
+        <header>Null</header>
+        <p>The null type is inhabited by only one value: null. It indicates the absence of an object.</p>
+        <code>const number = null</code>
+      </section>
+      <section class='main-section' id='symbol'>
+        <header>Symbol</header>
+        <p>The Symbol type is a unique and immutable value. Symbols are often used in Objects to create unique keys that are guaranteed not to clash with keys from other code.</p>
+        <code>/*hello world*/</code>
+      </section>
+      <section class='main-section' id='object'>
+        <header>Object</header>
+        <p>In JavaScript, Objects can be seen as a collection of key-value pairs that can be added or removed. Keys can be strings or symbols, and values can be any data type, including other objects.</p>
+        <code>/*hello world*/</code>
+      </section>
+      <section class='main-section' id='reference'>
+        <header>Reference</header>
+        <p>All the documentation from this page can be found on <a href='https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures'> MDN</a>.</p>
+      </section>
+    </main>
+  </body>
+</html>

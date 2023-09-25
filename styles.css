@@ -1,0 +1,144 @@
+:root {
+  --background-color1: #333;
+  --background-color2: #e7dcde;
+  --font-color1: #fff;
+  --font-color2: #000;
+
+}
+
+body {
+  min-width: 290px;
+  margin: 0px;
+  font-family: helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--font-color1);
+  background-color: var(--background-color1);
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+/* navigation */
+
+#navbar {
+  position: sticky;
+  min-width: 290px;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  border-right: 2px solid #fff;
+  background: var(--background-color1)
+}
+
+#nav-header {
+  font-size: 30px;
+  text-align: center;
+  padding: 20px 10px
+}
+
+#nav-list {
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item {
+  list-style: none;
+  border-top: 2px solid #fff;
+  padding: 15px 20px;
+}
+
+.nav-link:link {
+  color: var(--font-color1);
+  text-decoration: none;
+}
+
+.nav-link:visited {
+  color: var(--font-color1);
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  color: var(--font-color1);
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+/*main*/
+
+#main-doc {
+  flex: 1;
+  min-width: 300px;
+}
+
+.main-section {
+  padding: 20px;
+  border-bottom: 2px solid #fff;
+}
+
+.main-section:first-of-type {
+  padding-top: 30px
+}
+
+.main-section:last-of-type {
+  border-bottom: none;
+  padding-bottom: 30px
+}
+
+header {
+  font-size: 26px;
+}
+
+p {
+  margin: 0;
+  padding-top: 16px
+}
+
+code {
+  display: block;
+  padding: 10px;
+  margin: 16px 10px;
+  color: var(--font-color2);
+  background: var(--background-color2);
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+a {
+  color: var(--font-color1);
+  text-decoration: underline;
+}
+
+a:visited {
+  color: var(--font-color1);
+  text-decoration: underline;
+}
+
+a:hover {
+  color: var(--font-color1);
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 600px) {
+
+  #navbar {
+    width: 100%;
+    height: 250px;
+    border-bottom: 2px solid #fff;
+    overflow: auto;
+    background: var(--background-color1);
+    position: static
+  }
+   #nav-header {
+    display: block;
+    position: sticky;
+    top: 0;
+    max-height: 50px;
+    text-align: center;
+    padding: 10px;
+    margin: 0px;
+    background: var(--background-color1)
+  }
+}
